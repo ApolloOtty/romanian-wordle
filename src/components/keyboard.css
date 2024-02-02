@@ -1,0 +1,501 @@
+body{
+  background-color: #0F172A;
+}
+
+
+.keyboard-container {
+  height:20vh;
+}
+
+.keyboard-button {
+  width: 2.5vw;
+  background-color: #475569;
+  margin: 0.2vw;
+  height: 5vw;
+  border-radius: 6px;
+  border: #000;
+  color: white;
+  font-weight: 600;
+}
+
+.keyboard-button.dark {
+  background-color: #cccfd3;
+}
+
+
+.keyboard-button.dark.enter_delete{
+  background-color: #c1c3c9;
+}
+
+.keyboard-button.green{
+  width: 2.5vw;
+  background-color: #22C55E;
+  transition: background-color 0s 1.5s;
+   height: 3.5vw;
+  border-radius: 6px;
+  border: #000;
+  color: white;
+  font-weight: 600;
+}
+
+.keyboard-button.yellow{
+width: 2.5vw;
+background-color: #EAB308;
+transition: background-color 0s 1.5s;
+height: 3.5vw;
+border-radius: 6px;
+border: #000;
+color: white;
+font-weight: 600;
+}
+
+.keyboard-button.dark.yellow-dark {
+  background-color: #EAB308;
+}
+
+
+.pierd{
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+#lightdarkmode{
+  border-radius: 4px;
+  color: white;
+  background-color: #1E293B;
+  border: 0px;
+  height: auto;
+}
+
+.keyboard-button.grey{
+width: 2.5vw;
+background-color: #182130;
+transition: background-color 0s 1.5s;
+margin: 0.2vw;
+height: 3.5vw;
+border-radius: 6px;
+border: #000;
+color: white;
+font-weight: 600;
+}
+
+.keyboard-button.grey-dark{
+  background-color: #010c25;
+  }
+
+@media (prefers-color-scheme: dark) {
+  .keyboard-button.grey {
+    background-color: #1E293B;
+  }
+}
+
+.keyboard-button.enter_delete{
+  margin: 0.2vw;
+  width: 4.5vw;
+  height: 3vw;
+}
+
+.matrix {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vw;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  width: 3vw;
+  height: 3vw;
+  border: 2px solid #475569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  background-color: transparent; /* Default background color */
+  border-radius: 4px;
+  
+}
+
+.square.correct {
+  background-color: #22C55E;
+  transition: background-color 0s 0.4s;}
+
+.square.exists {
+  background-color: #EAB308;
+  transition: background-color 0s 0.4s;
+}
+
+.square.grey {
+  background-color: #334155;
+  transition: background-color 0s 0.4s;}
+
+
+.square.exists-green {
+  background-color: green;
+}
+
+
+.matrix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 40%;
+  background-color: #0F172A;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  animation: fade-in 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
+  background-color: rgba(255, 255, 255, 0.116);
+  z-index: 9998;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.overlay.show {
+  opacity: 1;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.buton_copy{
+  width: auto;
+  height: 20%;
+  background-color: rgb(68, 72, 133);
+  margin-top: 2%;
+  border: 0px;
+  color: white;
+  border-radius: 6px;
+}
+
+
+.buton_copy:active{
+  background-color: rgb(86, 97, 253); /* Change the color when pressed */
+}
+
+
+@media (max-width: 860px) {
+  .overlay{
+    width: 80%;
+    height: 50%;
+  }
+  .matrix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Align to the bottom of the container */
+    margin-top: 10vh; /* Set a height to the container to cover the entire viewport */
+  }
+  .keyboard-container {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keyboard-button {
+    width: 2.5vw;
+    margin: 0.2vw;
+    height: 5vw;
+    border-radius: 6px;
+    border: #000;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .keyboard-button {
+    margin: 0.25vw;
+    width: 9vw;
+    height: 15vw;
+  }
+  .keyboard-button.yellow {
+    width: 9vw;
+    margin: 0.25vw;
+    height: 15vw;  }
+  .keyboard-button.green {
+    margin: 0.25vw;
+    width: 9vw;
+    height: 15vw;  }
+  .keyboard-button.grey {
+    margin: 0.25vw;
+    width: 9vw;
+    height: 15vw;  }
+  .keyboard-button.enter_delete {
+    margin: 0.25vw;
+    width: 13.6vw;
+    height: 15vw;
+  }
+  #keyboard {
+    display: flex;
+    align-items: normal;
+    justify-content: normal;
+  }
+  .square {
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid #475569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: transparent; /* Default background color */
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1024px) {
+    .keyboard-container {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .keyboard-button {
+    margin: 0.45vw;
+    width: 7vw;
+    height: 7vw;
+  }
+  .keyboard-button.yellow {
+    width: 7vw;
+    margin: 0.45vw;
+    height: 7vw;
+  }
+  .keyboard-button.green {
+    width: 7vw;
+    margin: 0.45vw;
+
+    height: 7vw;
+  }
+  .keyboard-button.grey {
+    margin: 0.45vw;
+    width: 7vw;
+    height: 7vw;
+  }
+  .keyboard-button.enter_delete {
+    width: 9vw;
+    height: 7vw;
+  }
+  #keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .square {
+    width: 7vw;
+    height: 7vw;
+    font-size: 4vw;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .keyboard-button {
+    width: 3vw;
+    height: 3vw;
+  }
+  .keyboard-button.yellow {
+    width: 3vw;
+    height: 3vw;
+  }
+  .keyboard-button.green {
+    width: 3vw;
+    height: 3vw;
+  }
+  .keyboard-button.grey {
+    width: 3vw;
+    height: 3vw;
+  }
+  .keyboard-button.enter_delete {
+    width: 4.5vw;
+    height: 3vw;
+  }
+  #keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .square {
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    margin-right: 3px;
+    margin-bottom: 3px;
+  }
+}
+
+.square.expand {
+  animation: expand 0.5s;
+  transform-origin: center;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.error-message {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: rgb(214, 87, 87);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 6px;
+}
+
+.error-message.show {
+  opacity: 1;
+}
+
+.win {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: rgb(54, 184, 54);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 6px;
+}
+
+.win.show {
+  opacity: 1;
+}
+
+
+
+@keyframes backflip {
+  0% {
+    transform: perspective(800px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(800px) rotateX(90deg);
+  }
+  100% {
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+.square {
+  /* Existing styles for the square */
+  transition: background-color 0.3s ease;
+}
+
+.square.animate {
+  animation: backflip 0.8s ease;
+  transform-style: preserve-3d;
+
+
+}
+
+.square.has-letter {
+  border: 2px solid white;
+}
+
+@media (max-width: 500px) and (max-height: 930px) {
+  .buton_copy{
+    font-size: 3vw;
+    width: 50%;
+    margin-top: 10%;
+    height: 17%;
+  }
+  .keyboard-container {
+    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .keyboard-container {
+    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+@media (max-width: 390px) and (min-height: 840px){
+  .keyboard-container {
+    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
