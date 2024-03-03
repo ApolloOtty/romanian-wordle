@@ -1,7 +1,7 @@
 {
-  "name": "wordle-romana",
+  "name": "romanian-wordle",
   "version": "0.1.0",
-  "homepage": "https://apollootty.github.io/wordle-romana",
+  "homepage": "https://apollootty.github.io/romanian-wordle/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
