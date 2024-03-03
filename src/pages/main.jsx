@@ -462,11 +462,11 @@ const handleThemeChange = () => {
   return (
 <div>
     <div className={`error-message ${errorWordNotExist ? 'show' : ''}`}>
-      Nu există cuvântu' ăla =)))))))))
+      Acest cuvant nu exista.
         </div>
 
         <div className={`error-message ${numarare ? 'show' : ''}`}>
-          Alea nu-s 5 litere =))))))
+          Trebuie sa introduciun cuvant de 5 litere!
         </div>
 
       <div className={`win ${Win ? 'show' : ''}`}>
@@ -479,8 +479,8 @@ const handleThemeChange = () => {
       <button className="close-button" onClick={handleClose}>
         X
       </button>
-      <h2>Bravo 🙄</h2>
-      <h3>Macar atat sa poti si tu 😒</h3>
+      <h2>Bravo</h2>
+      <h3>Distribuie rezultatul</h3>
       {Lose && (
         <>
           <h3 className='pierd'>Cuvantul era: {word}</h3>
@@ -496,7 +496,7 @@ const handleThemeChange = () => {
       ))}
 
       <button className='buton_copy' onClick={handleCopy}>
-        Copiază dragă copiază să trimiți pe grup (ăsta e un buton in caz ca nu ți-ai dat seama)
+        Copiază să trimiți pe grup (ăsta e un buton in caz ca nu ți-ai dat seama)
       </button>
       <textarea ref={emojiRef} style={{ position: 'absolute', top: -9999, left: -9999 }} />
     </div>
@@ -522,7 +522,7 @@ const handleThemeChange = () => {
           ))}
         </div>
       ))}
-      <button className='buton_copy' onClick={handleCopy}>Copiaza draga copiaza sa trimiti pe grup (asta e un buton in caz ca nu ti-ai dat seama)</button>
+      <button className='buton_copy' onClick={handleCopy}>Copiaza sa trimiti pe grup (asta e un buton in caz ca nu ti-ai dat seama)</button>
       <textarea ref={emojiRef} style={{ position: 'absolute', top: -9999, left: -9999 }} />
         </div>
         </>

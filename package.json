@@ -1,7 +1,7 @@
 {
-  "name": "romanian-wordle",
+  "name": "worlde-romanian",
   "version": "0.1.0",
-  "homepage": "https://apollootty.github.io/romanian-wordle/",
+  "homepage": "https://apollootty.github.io/wordle-romanian",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,7 +11,7 @@
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
     "react-router-dom": "^6.14.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
