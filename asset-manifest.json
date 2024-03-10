@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/romanian-wordle/static/css/main.60f36753.css",
-    "main.js": "/romanian-wordle/static/js/main.3812db0e.js",
+    "main.js": "/romanian-wordle/static/js/main.25db7b48.js",
     "static/js/787.fc399608.chunk.js": "/romanian-wordle/static/js/787.fc399608.chunk.js",
     "static/media/logo.svg": "/romanian-wordle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/romanian-wordle/index.html",
     "main.60f36753.css.map": "/romanian-wordle/static/css/main.60f36753.css.map",
-    "main.3812db0e.js.map": "/romanian-wordle/static/js/main.3812db0e.js.map",
+    "main.25db7b48.js.map": "/romanian-wordle/static/js/main.25db7b48.js.map",
     "787.fc399608.chunk.js.map": "/romanian-wordle/static/js/787.fc399608.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.60f36753.css",
-    "static/js/main.3812db0e.js"
+    "static/js/main.25db7b48.js"
   ]
 }
