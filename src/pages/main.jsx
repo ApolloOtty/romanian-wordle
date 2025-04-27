@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 
 const App = () => {
 
-  const TRACKING_ID = "G-4XYQTGPZ1E"; // OUR_TRACKING_ID
+  const TRACKING_ID = "G-4XYQTGPZ1E";
   
   ReactGA.initialize(TRACKING_ID);
 
