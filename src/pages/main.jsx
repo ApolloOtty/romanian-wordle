@@ -562,7 +562,7 @@ const handleThemeChange = () => {
       <p>{selectedLetters.join('')}</p>
       <div  style={{ display: 'flex',flexDirection: '', alignItems: 'center', justifyContent: 'center' }}>
       <button id='lightdarkmode' onClick={handleThemeChange}>
-        Pentru cei care nu văd bine
+        Pentru cei care folosesc forced dark mode
       </button>
         </div>
       
